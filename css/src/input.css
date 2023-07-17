@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .skill-effect {
+    @apply grayscale hover:grayscale-0 hover:scale-95 rounded-lg shadow-md transition-all duration-300;
+  }
+
+  .image-effect {
+    @apply hover:scale-110 transition-all duration-300;
+  }
+}
