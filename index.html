@@ -9,24 +9,29 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap" rel="stylesheet" />
+    <!-- animate -->
+    <link rel="stylesheet" href="/node_modules/animate.css/animate.min.css">
+    <link rel="stylesheet" href="/node_modules/aos/dist/aos.css">
   </head>
-  <body class="font-poppins">
+  <body class="font-poppins ">
     <section id="home">
+      
       <div class="w-full h-screen relative bg-white">
         <img src="./img/ferdi1.png" alt="" class="absolute bottom-0 right-0 opacity-40 w-96 sm:w-[450px]" />
         <div class="container px-8 pt-24 lg:pl-48 lg:pt-52 md:pl-32">
-          <h1 class="text-2xl font-semibold md:text-3xl lg:text-4xl text-slate-700">Hello, I'm</h1>
-          <h1 class="text-5xl mb-3 font-bold lg:text-8xl md:text-6xl lg:bg-gradient-to-r lg:from-black lg:to-slate-300 lg:text-transparent lg:bg-clip-text">Ferdinand</h1>
+          <div><h1 class="text-2xl font-semibold md:text-3xl lg:text-4xl text-slate-700 animate__animated animate__backInDown	">Hello, I'm</h1></div>
+          <h1 class="text-5xl mb-3 font-bold lg:text-8xl md:text-6xl lg:bg-gradient-to-r lg:from-black lg:to-slate-300 lg:text-transparent lg:bg-clip-text animate__animated animate__backInDown">Ferdinand</h1>
           <div class="text-xl font-medium lg:text-3xl md:text-2xl">
+
             <h1>
-              <a href="" class="typewrite" data-period="2000" data-type='[ "Web Developer", "Gamer", "I Love to Develop." ]'>
+              <a href="" class="typewrite" data-period="2000" data-type='[ "I am Web Developer.", "I am Gamer.", "I Love to Develop." ]'>
                 <span class="wrap"></span>
               </a>
             </h1>
           </div>
         </div>
         <!-- floating menu-->
-        <div class="inline-block absolute left-6 bottom-16 lg:bottom-40">
+        <div class="inline-block absolute left-6 bottom-16 lg:bottom-40 animate__animated animate__fadeInLeft">
           <ul class="menu bg-base-300 shadow-md rounded-box">
             <li class="pb-3">
               <a href="#home" class="tooltip tooltip-right" data-tip="Home">
@@ -59,32 +64,33 @@
     <!-- END -->
 
     <!-- ABOUT -->
-    <section id="about" class="pt-28 pb-28 bg-base-200">
+    <section id="about" class="pt-28 pb-28 bg-base-200 overflow-hidden">
       <div class="container">
         <div class="px-8">
-          <h1 class="text-center font-medium text-xl lg:text-2xl text-slate-700 mb-2">
+          <h1 class="text-center font-medium text-xl lg:text-2xl text-slate-700 mb-2" data-aos="fade-up">
             About
             <hr class="border-t-[1px] border-t-slate-700 w-14 mx-auto" />
           </h1>
-          <h2 class="text-center text-3xl lg:text-4xl mb-10">Get to know me</h2>
+          <h2 class="text-center text-3xl lg:text-4xl mb-10" data-aos="fade-down">Get to know me</h2>
         </div>
-      <div class="flex flex-col w-full lg:flex-row px-4">
-        <div class="grid flex-grow  card place-items-center md:w-1/2 p-3">
-            <p>Saya merupakan mahasiswa Sarjana Sistem Informasi. Saya suka dengan dunia Teknlogi Khususnya Programming, saya tertarik untuk belajar berbagai hal baru di dunia Teknologi. Saya juga tertarik dan antusias untuk bekerja sebagai tim maupun Individual.</p>
-        </div> 
-        <div class="divider lg:divider-horizontal">OR</div> 
-        <div class="grid flex-grow place-content-center md:w-1/2 p-3 card">
+        <div class="flex flex-col w-full lg:flex-row px-4">
+          <div class="grid flex-grow card md:w-1/2 p-2">
+            <h4 class="text-3xl font-poppins mb-2" data-aos="fade-right">Story About me</h4>
+              <p>Saya merupakan mahasiswa Sarjana Sistem Informasi. Saya suka dengan dunia Teknlogi Khususnya Programming, saya tertarik untuk belajar berbagai hal baru di dunia Teknologi. Saya juga tertarik dan antusias untuk bekerja sebagai tim maupun Individual.</p>
+          </div> 
+          <div class="divider lg:divider-horizontal">OR</div> 
+          <div class="grid flex-grow place-content-center md:w-1/2 p-3 card">
             <p>Name : Ferdinand Koryanto <br>
                 Email : fkoryanto@gmail.com <br>
             Address : Jl. Holil, Kreo, Larangan, Tangerang <br>
             Age : 21 Years Old <br>
             Hobbies : Game, Listening Music, Streaming Movie, Singing</p>
-            <div class="mt-10 flex justify-center lg:justify-start gap-3">
+            <div class="mt-10 flex justify-center lg:justify-start gap-3" data-aos="fade-up">
               <a href="http://instagram.com/_ferdinandk" class="inline-block w-12  border border-slate-400 rounded-full p-[7px] hover:bg-slate-300 grayscale  hover:grayscale-0"><img src="/img/about/instagram-1-svgrepo-com.svg" alt="instagram" class=""></a> 
               <a href="http://" class=" inline-block w-12 border border-slate-400 rounded-full p-2 hover:bg-slate-300 grayscale  hover:grayscale-0"><img src="/img/about/facebook-color-svgrepo-com.svg" alt="instagram" class=""></a> 
               <a href="https://github.com/Ferdinand05" class="inline-block w-12 border border-slate-400 rounded-full p-[7px] hover:bg-slate-300 grayscale  hover:grayscale-0"><img src="/img/about/github-color-svgrepo-com.svg" alt="instagram"></a> 
             </div>
-        </div>
+          </div>
       </div>
     </section>
 <!-- end -->
@@ -93,13 +99,13 @@
 <section class="pt-28 pb-28" id="skill">
     <div class="container px-4">
         <div class="px-8">
-            <h1 class="text-center font-medium text-xl text-slate-700 mb-2 lg:text-2xl">
+            <h1 class="text-center font-medium text-xl text-slate-700 mb-2 lg:text-2xl " data-aos="fade-up">
               Skill
               <hr class="border-t-[1px] border-t-slate-700 w-14 mx-auto" />
             </h1>
-            <h2 class="text-center text-3xl mb-10 lg:text-4xl">Skills Summary</h2>
+            <h2 class="text-center text-3xl mb-10 lg:text-4xl" data-aos="fade-down">Skills Summary</h2>
           </div>
-          <div class="w-full  shadow-lg rounded-md grid grid-cols-3 lg:grid-cols-4  p-10 gap-5 place-content-center ">
+          <div class="w-full  shadow-lg rounded-md grid grid-cols-3 lg:grid-cols-4  p-10 gap-5 place-content-center" data-aos="flip-right" data-aos-duration="2000">
             <span class="tooltip tooltip-top" data-tip="HMTL5"><img src="./img/skill/html-5-svgrepo-com.svg" class="skill-effect" alt="HTML 5"></span>
             
             <span class="tooltip tooltip-top" data-tip="CSS">
@@ -130,7 +136,7 @@
 
 <!-- START BG FIXED -->
 <div class=" w-full h-72 bg-cover bg-fixed bg-[url(/img/1.jpg)] flex border-t-4 border-b-4 bg-blue-400 bg-blend-multiply">
-    <h1 class="text-5xl font-bold text-center m-auto bg-gradient-to-r text-transparent bg-clip-text from-slate-600 via-blue-300 to-slate-200">Lets Collaborate with me!</h1>
+    <h1 class="text-5xl font-bold text-center m-auto bg-gradient-to-r text-transparent bg-clip-text from-slate-600 via-blue-300 to-slate-200" data-aos="fade-right"  data-aos-duration="500">Lets Collaborate with me!</h1>
 </div>
 <!-- END -->
 
@@ -138,12 +144,12 @@
 <section class="pt-32 pb-32" id="portfolio">
     <div class="container">
         <div class="px-8">
-            <h1 class="text-center font-medium text-xl lg:text-2xl text-slate-700 mb-2">
+            <h1 class="text-center font-medium text-xl lg:text-2xl text-slate-700 mb-2" data-aos="fade-down">
               Portfolio
               <hr class="border-t-[1px] border-t-slate-700 w-14 mx-auto" />
             </h1>
-            <h2 class="text-center text-3xl lg:text-4xl mb-5">Newest Project</h2>
-            <p class="text-center mb-12">Beberapa Project terbaru yang saya buat sendiri.</p>
+            <h2 class="text-center text-3xl lg:text-4xl mb-5" data-aos="fade-up">Newest Project</h2>
+            <p class="text-center mb-12" data-aos="zoom-in" >Beberapa Project terbaru yang saya buat sendiri.</p>
           </div>
           <div class="w-full px-8 lg:columns-2  p-5">
             <div class="card w-full  bg-base-100 shadow-xl mb-10">
@@ -220,6 +226,11 @@
 
 
 
-    <script src="./js/script.js"></script>
+  <script src="./js/script.js"></script>
+  <script src="./js/typewriter.js"></script>
+  <script src="./node_modules/aos/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
   </body>
 </html>
