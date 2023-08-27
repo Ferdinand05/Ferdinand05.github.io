@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en" class="dark scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,227 +10,312 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap" rel="stylesheet" />
     <!-- animate -->
-    <link rel="stylesheet" href="/node_modules/animate.css/animate.min.css">
-    <link rel="stylesheet" href="/node_modules/aos/dist/aos.css">
+    <link rel="stylesheet" href="/node_modules/animate.css/animate.min.css" />
+    <link rel="stylesheet" href="/node_modules/aos/dist/aos.css" />
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="/assets/css/all.min.css" />
+    <!-- jquery -->
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
   </head>
-  <body class="font-poppins ">
+  <body class="font-poppins relative">
     <section id="home">
-      
-      <div class="w-full h-screen relative bg-white">
-        <img src="./img/ferdi1.png" alt="" class="absolute bottom-0 right-0 opacity-40 w-96 sm:w-[450px]" />
-        <div class="container px-8 pt-24 lg:pl-48 lg:pt-52 md:pl-32">
-          <div><h1 class="text-2xl font-semibold md:text-3xl lg:text-4xl text-slate-700 animate__animated animate__backInDown	">Hello, I'm</h1></div>
-          <h1 class="text-5xl mb-3 font-bold lg:text-8xl md:text-6xl lg:bg-gradient-to-r lg:from-black lg:to-slate-300 lg:text-transparent lg:bg-clip-text animate__animated animate__backInDown">Ferdinand</h1>
-          <div class="text-xl font-medium lg:text-3xl md:text-2xl">
+      <div class="w-full h-screen relative bg-white dark:bg-darkmode">
+      <label class="swap swap-rotate absolute right-10 top-10">
+        <!-- this hidden checkbox controls the state -->
+        <input type="checkbox" id="dark-mode" />
 
-            <h1>
-              <a href="" class="typewrite" data-period="2000" data-type='[ "I am Web Developer.", "I am Gamer.", "I Love to Develop." ]'>
-                <span class="wrap"></span>
-              </a>
-            </h1>
-          </div>
+        <!-- sun icon -->
+        <i class="swap-on fa-solid fa-sun fa-spin text-4xl dark:text-white"></i>
+
+        <!-- moon icon -->
+        <i class="swap-off fa-solid fa-moon text-4xl"></i>
+      </label>
+
+      <img src="./img/ferdi1.png" alt="" class="absolute bottom-0 right-0 opacity-40 dark:opacity-50 w-96 sm:w-[450px]" />
+      <div class="container px-8 pt-24 lg:pl-48 lg:pt-52 md:pl-32">
+        <div><h1 class="text-2xl font-semibold md:text-3xl lg:text-4xl text-slate-800 animate__animated animate__backInDown dark:text-blue-600">Hello, I'm</h1></div>
+        <h1 class="text-5xl mb-5 md:mb-3 font-bold lg:text-8xl md:text-6xl lg:bg-gradient-to-r lg:from-black lg:to-slate-300 lg:text-transparent lg:bg-clip-text animate__animated animate__backInDown dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-blue-500 dark:to-blue-200">Ferdinand</h1>
+        <div class="text-xl font-medium lg:text-3xl md:text-2xl dark:text-blue-500">
+          <h1 class="mb-10">
+            <a class="typewrite" data-period="2000" data-type='[ "I am Web Developer.", "I am Gamer.", "I Love to Develop." ]'>
+              <span class="wrap"></span>
+            </a>
+          </h1>
         </div>
-        <!-- floating menu-->
-        <div class="inline-block absolute left-6 bottom-16 lg:bottom-40 animate__animated animate__fadeInLeft">
-          <ul class="menu bg-base-300 shadow-md rounded-box">
-            <li class="pb-3">
-              <a href="#home" class="tooltip tooltip-right" data-tip="Home">
-                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
-                </svg>
-              </a>
-            </li>
-            <li class="pb-3">
-              <a href="#about" class="tooltip tooltip-right" data-tip="Details">
-                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-              </a>
-            </li>
-            <li class="pb-3">
-              <a href="#skill" class="tooltip tooltip-right" data-tip="Skills">
-                <img src="./img/icons/technical-skill-technical-education-computer-skills-svgrepo-com.svg" class="w-6 h-6" alt="" />
-              </a>
-            </li>
-            <li class="">
-              <a href="#portfolio" class="tooltip tooltip-right" data-tip="Portfolio">
-                <img src="./img/icons/portfolio-svgrepo-com.svg" class="w-6 h-6" alt="" />
-              </a>
-            </li>
-          </ul>
-        </div>
+      </div>
+      <!-- floating menu-->
+      <div class="inline-block absolute left-6 bottom-13 md:bottom-20 lg:bottom-[135px] animate__animated animate__fadeInLeft">
+        <ul class="menu bg-base-300 shadow-md rounded-box dark:bg-gray-700  p-1 md:p-3">
+          <li class="pb-3">
+            <a href="#home" class="tooltip tooltip-right" data-tip="Home">
+              <i class="fa-solid fa-house text-xl dark:text-slate-500"></i>
+            </a>
+          </li>
+          <li class="pb-3">
+            <a href="#about" class="tooltip tooltip-right" data-tip="Details">
+              <i class="fa-solid fa-address-card text-xl dark:text-slate-500"></i>
+            </a>
+          </li>
+          <li class="pb-3">
+            <a href="#skill" class="tooltip tooltip-right" data-tip="Skills">
+              <i class="fa-solid fa-chalkboard-user text-xl dark:text-slate-500"></i>
+            </a>
+          </li>
+          <li class="pb-3">
+            <a href="#portfolio" class="tooltip tooltip-right" data-tip="Portfolio">
+              <i class="fa-solid fa-book-bookmark text-xl dark:text-slate-500"></i>
+            </a>
+          </li>
+          <li class="">
+            <a href="#contact" class="tooltip tooltip-right" data-tip="Contact">
+              <i class="fa-solid fa-envelope text-xl dark:text-slate-500"></i>
+            </a>
+          </li>
+        </ul>
       </div>
     </section>
     <!-- END -->
 
     <!-- ABOUT -->
-    <section id="about" class="pt-28 pb-28 bg-base-200 overflow-hidden">
-      <div class="container">
-        <div class="px-8">
-          <h1 class="text-center font-medium text-xl lg:text-2xl text-slate-700 mb-2" data-aos="fade-up">
+    <section id="about" class="pt-24 pb-28 bg-base-200 overflow-hidden  dark:bg-slate-800">
+      <div class="container ">
+        <div class="px-8 sm:text-center ">
+          <h1 class="text-center font-medium text-xl text-slate-700 dark:text-slate-600 mb-2 lg:text-2xl" data-aos="fade-up">
             About
             <hr class="border-t-[1px] border-t-slate-700 w-14 mx-auto" />
           </h1>
-          <h2 class="text-center text-3xl lg:text-4xl mb-10" data-aos="fade-down">Get to know me</h2>
+          <h2 class="text-center text-3xl mb-10 lg:text-4xl  dark:text-slate-500" data-aos="fade-down">Get to know me</h2>
         </div>
-        <div class="flex flex-col w-full lg:flex-row px-4">
-          <div class="grid flex-grow card md:w-1/2 p-2">
-            <h4 class="text-3xl font-poppins mb-2" data-aos="fade-right">Story About me</h4>
-              <p>Saya merupakan mahasiswa Sarjana Sistem Informasi. Saya suka dengan dunia Teknlogi Khususnya Programming, saya tertarik untuk belajar berbagai hal baru di dunia Teknologi. Saya juga tertarik dan antusias untuk bekerja sebagai tim maupun Individual.</p>
-          </div> 
-          <div class="divider lg:divider-horizontal">OR</div> 
-          <div class="grid flex-grow place-content-center md:w-1/2 p-3 card">
-            <p>Name : Ferdinand Koryanto <br>
-                Email : fkoryanto@gmail.com <br>
-            Address : Jl. Holil, Kreo, Larangan, Tangerang <br>
-            Age : 21 Years Old <br>
-            Hobbies : Game, Listening Music, Streaming Movie, Singing</p>
-            <div class="mt-10 flex justify-center lg:justify-start gap-3" data-aos="fade-up">
-              <a href="http://instagram.com/_ferdinandk" class="inline-block w-12  border border-slate-400 rounded-full p-[7px] hover:bg-slate-300 grayscale  hover:grayscale-0"><img src="/img/about/instagram-1-svgrepo-com.svg" alt="instagram" class=""></a> 
-              <a href="http://" class=" inline-block w-12 border border-slate-400 rounded-full p-2 hover:bg-slate-300 grayscale  hover:grayscale-0"><img src="/img/about/facebook-color-svgrepo-com.svg" alt="instagram" class=""></a> 
-              <a href="https://github.com/Ferdinand05" class="inline-block w-12 border border-slate-400 rounded-full p-[7px] hover:bg-slate-300 grayscale  hover:grayscale-0"><img src="/img/about/github-color-svgrepo-com.svg" alt="instagram"></a> 
+        <div class="px-8 bg-base-200 dark:bg-slate-800">
+          <div class="sm:hero-content flex-col lg:flex-row">
+            <img src="/img/ferdi2.jpg" class="grayscale hover:grayscale-0 w-80 md:w-96 rounded-lg hover:border-slate-400 border-slate-300 border-4 shadow-2xl" data-aos="fade-left" />
+            <div class="mt-5 md:ml-7">
+              <h1 class="text-3xl md:text-4xl lg:text-5xl font-light text-slate-700 dark:text-slate-400">Hello There 🙋🏻‍♂️</h1>
+              <p class="py-4 lg:text-xl dark:text-textdark">
+                I am a fullstack web developer, now I am studying information systems bachelor degree. I like everything about technology, especially in the field of programming. I am a fast learner and interested in working in a team
+              </p>
+              <button class="btn bg-[#849e7c] lg:btn-wide btn-success glass">Download CV</button>
             </div>
           </div>
+        </div>
       </div>
     </section>
-<!-- end -->
+    <!-- end -->
 
     <!-- Section Skills -->
-<section class="pt-28 pb-28" id="skill">
-    <div class="container px-4">
+    <section class="pt-28 pb-28 dark:bg-slate-900" id="skill">
+      <div class="container px-4 dark:bg-slate-900">
         <div class="px-8">
-            <h1 class="text-center font-medium text-xl text-slate-700 mb-2 lg:text-2xl " data-aos="fade-up">
-              Skill
-              <hr class="border-t-[1px] border-t-slate-700 w-14 mx-auto" />
-            </h1>
-            <h2 class="text-center text-3xl mb-10 lg:text-4xl" data-aos="fade-down">Skills Summary</h2>
-          </div>
-          <div class="w-full  shadow-lg rounded-md grid grid-cols-3 lg:grid-cols-4  p-10 gap-5 place-content-center" data-aos="flip-right" data-aos-duration="2000">
-            <span class="tooltip tooltip-top" data-tip="HMTL5"><img src="./img/skill/html-5-svgrepo-com.svg" class="skill-effect" alt="HTML 5"></span>
-            
-            <span class="tooltip tooltip-top" data-tip="CSS">
-                <img src="./img/skill/css-3-svgrepo-com.svg" class="skill-effect" alt="CSS">
-            </span>
-            <span class="tooltip tooltip-top" data-tip="Javascript">
-                <img src="./img/skill/javascript-svgrepo-com.svg" class="skill-effect" alt="">
-            </span>
-            <span class="tooltip tooltip-top" data-tip="PHP">
-                <img src="./img/skill/php2-svgrepo-com.svg" class="skill-effect" alt="">
-            </span>
-            <span class="tooltip tooltip-top" data-tip="Bootstrap">
-                <img src="./img/skill/bootstrap-svgrepo-com.svg" class="skill-effect" alt="">
-            </span>
-            <span class="tooltip tooltip-top" data-tip="TailwindCSS">
-                <img src="./img/skill/tailwind-svgrepo-com.svg" class="skill-effect" alt="">
-            </span>
-            <span class="tooltip tooltip-top" data-tip="Database MYSQL">
-                <img src="./img/skill/mysql-logo-svgrepo-com.svg" class="skill-effect" alt="">
-            </span>
-            <span class="tooltip tooltip-top" data-tip="Codeigniter 4">
-                <img src="./img/skill/codeigniter-logo-svgrepo-com.svg" class="skill-effect" alt="">
-            </span>
-          </div>
+          <h1 class="text-center font-medium text-xl text-slate-700 dark:text-slate-600 mb-2 lg:text-2xl" data-aos="fade-up">
+            Skill
+            <hr class="border-t-[1px] border-t-slate-700 w-14 mx-auto" />
+          </h1>
+          <h2 class="text-center text-3xl mb-10 lg:text-4xl dark:text-slate-500" data-aos="fade-down">Skills Summary</h2>
+        </div>
+        <div class="dark:border dark:border-blue-600 w-full shadow-lg rounded-md grid grid-cols-3 lg:grid-cols-4 p-10 gap-5 place-content-center" data-aos="flip-right" data-aos-duration="2000">
+          <span class="tooltip tooltip-top" data-tip="HMTL5"><img src="./img/skill/html-5-svgrepo-com.svg" class="skill-effect" alt="HTML 5" /></span>
+
+          <span class="tooltip tooltip-top" data-tip="CSS">
+            <img src="./img/skill/css-3-svgrepo-com.svg" class="skill-effect" alt="CSS" />
+          </span>
+          <span class="tooltip tooltip-top" data-tip="Javascript">
+            <img src="./img/skill/javascript-svgrepo-com.svg" class="skill-effect" alt="" />
+          </span>
+          <span class="tooltip tooltip-top" data-tip="PHP">
+            <img src="./img/skill/php2-svgrepo-com.svg" class="skill-effect" alt="" />
+          </span>
+          <span class="tooltip tooltip-top" data-tip="Bootstrap">
+            <img src="./img/skill/bootstrap-svgrepo-com.svg" class="skill-effect" alt="" />
+          </span>
+          <span class="tooltip tooltip-top" data-tip="TailwindCSS">
+            <img src="./img/skill/tailwind-svgrepo-com.svg" class="skill-effect" alt="" />
+          </span>
+          <span class="tooltip tooltip-top" data-tip="Database MYSQL">
+            <img src="./img/skill/mysql-logo-svgrepo-com.svg" class="skill-effect" alt="" />
+          </span>
+          <span class="tooltip tooltip-top" data-tip="Codeigniter 4">
+            <img src="./img/skill/codeigniter-logo-svgrepo-com.svg" class="skill-effect" alt="" />
+          </span>
+        </div>
+      </div>
+    </section>
+    <!-- END SKILL -->
+
+    <!-- START BG FIXED -->
+    <div class="w-full h-72 bg-cover bg-fixed bg-[url(/img/1.jpg)] flex border-t-4 border-b-4 bg-blue-400 bg-blend-multiply">
+      <h1 class="text-5xl font-bold text-center m-auto bg-gradient-to-r text-transparent bg-clip-text from-slate-600 via-blue-300 to-slate-200" data-aos="fade-right" data-aos-duration="500">Lets Collaborate with me!</h1>
     </div>
-</section>
-<!-- END SKILL -->
+    <!-- END -->
 
-<!-- START BG FIXED -->
-<div class=" w-full h-72 bg-cover bg-fixed bg-[url(/img/1.jpg)] flex border-t-4 border-b-4 bg-blue-400 bg-blend-multiply">
-    <h1 class="text-5xl font-bold text-center m-auto bg-gradient-to-r text-transparent bg-clip-text from-slate-600 via-blue-300 to-slate-200" data-aos="fade-right"  data-aos-duration="500">Lets Collaborate with me!</h1>
-</div>
-<!-- END -->
-
-<!-- PORTFOLIO START -->
-<section class="pt-32 pb-32" id="portfolio">
-    <div class="container">
+    <!-- PORTFOLIO START -->
+    <section class="pt-32 pb-32 dark:bg-slate-800" id="portfolio">
+      <div class="container">
         <div class="px-8">
-            <h1 class="text-center font-medium text-xl lg:text-2xl text-slate-700 mb-2" data-aos="fade-down">
-              Portfolio
-              <hr class="border-t-[1px] border-t-slate-700 w-14 mx-auto" />
-            </h1>
-            <h2 class="text-center text-3xl lg:text-4xl mb-5" data-aos="fade-up">Newest Project</h2>
-            <p class="text-center mb-12" data-aos="zoom-in" >Beberapa Project terbaru yang saya buat sendiri.</p>
-          </div>
-          <div class="w-full px-8 lg:columns-2  p-5">
-            <div class="card w-full  bg-base-100 shadow-xl mb-10">
-              <figure><img src="/img/project/w3-homepage.png" alt="home_page" class="image-effect" /></figure>
-              <div class="card-body">
-                <h2 class="card-title mb-1">
-                 <a href="" target="_blank" class="hover:text-slate-600">Wilayah 3 - Homepage</a>
-                </h2>
-                <p>Berisi Informasi mengenai Lokasi dan detail tentang Wilayah 3. Responsive</p>
-                <div class="card-actions justify-end mb-4 mt-5">
-                  <div class="badge badge-primary">Bootstrap</div> 
-                  <div class="badge badge-info">Codeigniter 4</div>
-                  <div class="badge badge-accent">Myth/auth</div>
-                </div>
-                <div class="flex justify-end">
-                  <a href="https://github.com/Ferdinand05/wilayah3" target="_blank" rel="noopener noreferrer" class="btn btn-success w-full lg:w-32 hover:border-slate-500">Read More</a>
-                </div>
+          <h1 class="text-center font-medium text-xl lg:text-2xl text-slate-700 dark:text-slate-600 mb-2" data-aos="fade-down">
+            Portfolio
+            <hr class="border-t-[1px] border-t-slate-700  w-14 mx-auto" />
+          </h1>
+          <h2 class="text-center text-3xl lg:text-4xl mb-5 dark:text-slate-500" data-aos="fade-up">Newest Project</h2>
+          <p class="text-center mb-12 dark:text-slate-500" data-aos="zoom-in">Beberapa Project terbaru yang saya buat sendiri.</p>
+        </div>
+        <div class="w-full px-8 lg:columns-2 p-5">
+          <div class="card w-full bg-base-100 shadow-xl mb-10">
+            <figure><img src="/img/project/w3-homepage.png" alt="home_page" class="image-effect" /></figure>
+            <div class="card-body">
+              <h2 class="card-title mb-1">
+                <a href="" target="_blank" class="hover:text-slate-600">Wilayah 3 - Homepage</a>
+              </h2>
+              <p>Berisi Informasi mengenai Lokasi dan detail tentang Wilayah 3. Responsive</p>
+              <div class="card-actions justify-end mb-4 mt-5">
+                <div class="badge badge-primary">Bootstrap</div>
+                <div class="badge badge-info">Codeigniter 4</div>
+                <div class="badge badge-accent">Myth/auth</div>
               </div>
-            </div>
-            <div class="card w-full bg-base-100 shadow-xl mb-10">
-              <figure><img src="/img/project/w3-anggota.png" alt="anggota_page" class="image-effect" /></figure>
-              <div class="card-body">
-                <h2 class="card-title mb-1">
-                 <a href="" target="_blank" class="hover:text-slate-600">Wilayah 3 - Dashboard Anggota</a>
-                </h2>
-                <p>Dashboard anggota - wilayah 3 . Menampilkan informasi mengenai Anggota, Disertai dengan CRUD</p>
-                <div class="card-actions justify-end mb-4 mt-5">
-                  <div class="badge badge-primary">Bootstrap</div> 
-                  <div class="badge badge-info">Codeigniter 4</div>
-                  <div class="badge badge-accent">Myth/auth</div>
-                </div>
-                <div class="flex justify-end">
-                  <a href="https://github.com/Ferdinand05/wilayah3" target="_blank" rel="noopener noreferrer" class="btn btn-success w-full lg:w-32 hover:border-slate-500">Read More</a>
-                </div>
+              <div class="flex justify-end">
+                <a href="https://github.com/Ferdinand05/wilayah3" target="_blank" rel="noopener noreferrer" class="btn btn-success w-full lg:w-32 hover:border-slate-500">Read More</a>
               </div>
             </div>
           </div>
-    </di;v>
-</section>
-<!-- END -->
+          <div class="card w-full bg-base-100 shadow-xl mb-10">
+            <figure><img src="/img/project/w3-anggota.png" alt="anggota_page" class="image-effect" /></figure>
+            <div class="card-body">
+              <h2 class="card-title mb-1">
+                <a href="" target="_blank" class="hover:text-slate-600">Wilayah 3 - Dashboard Anggota</a>
+              </h2>
+              <p>Dashboard anggota - wilayah 3 . Menampilkan informasi mengenai Anggota, Disertai dengan CRUD</p>
+              <div class="card-actions justify-end mb-4 mt-5">
+                <div class="badge badge-primary">Bootstrap</div>
+                <div class="badge badge-info">Codeigniter 4</div>
+                <div class="badge badge-accent">Myth/auth</div>
+              </div>
+              <div class="flex justify-end">
+                <a href="https://github.com/Ferdinand05/wilayah3" target="_blank" rel="noopener noreferrer" class="btn btn-success w-full lg:w-32 hover:border-slate-500">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END -->
+    <!-- CONTACT -->
+    <section class="pb-32 pt-24 dark:bg-slate-900" id="contact">
+      <div class="container">
+        <div class="px-8 sm:text-center">
+          <h1 class="text-center font-medium text-xl text-slate-700 dark:text-slate-600 mb-2 lg:text-2xl" data-aos="fade-up">
+            Contact
+            <hr class="border-t-[1px] border-t-slate-700 w-14 mx-auto" />
+          </h1>
+          <h2 class="text-center text-3xl mb-10 lg:text-4xl dark:text-slate-500" data-aos="fade-down">Connect with me</h2>
+        </div>
+        <div class="flex flex-col md:flex-row justify-around">
+          <div class="px-8 w-full md:w-1/2 text-center" data-aos="fade-down">
+            <div class="form-group">
+              <div class="mb-3">
+                <input type="email" name="email" id="email" placeholder="Email" class="input-md input-success dark:input-secondary input input-bordered w-[385px] lg:w-[420px]" />
+              </div>
+              <div class="mb-3">
+                <textarea name="message" id="message" cols="55" rows="5" placeholder="Message" class="textarea-bordered textarea textarea-success dark:textarea-secondary "></textarea>
+              </div>
+              <div class="mb-3">
+                <button class="btn btn-success btn-wide  dark:btn-info">Send</button>
+              </div>
+            </div>
+          </div>
 
-<footer class="footer p-10 bg-base-300 text-base-content w-full">
-  <div>
-    <span class="footer-title lg:text-3xl">Services</span> 
-    <p class="lg:text-xl">Portfolio</p> 
-    <p class="lg:text-xl">Design</p>
-    <p class="lg:text-xl">Web Developer</p>
-    <p class="lg:text-xl">Branding</p>
-  </div> 
-  <div>
-    <span class="footer-title lg:text-3xl">Navigasi</span> 
-    <a class="link link-hover lg:text-xl" href="#home">Home</a> 
-    <a class="link link-hover lg:text-xl" href="#about">About</a> 
-    <a class="link link-hover lg:text-xl" href="#skill">Skill</a> 
-    <a class="link link-hover lg:text-xl" href="#portfolio">Portfolio</a> 
-  </div> 
-  <div>
-    <span class="footer-title lg:text-3xl">Social</span> 
-    <div class="grid grid-cols-3 gap-3">
-      <a href="http://instagram.com/_ferdinandk" class="lg:w-[44px] inline-block w-10  border border-slate-400 rounded-full p-[5px] hover:bg-slate-300"><img src="/img/icons/instagram-svgrepo-com.svg" alt="instagram"></a> 
-      <a href="http://" class="lg:w-[44px] inline-block w-10 border border-slate-400 rounded-full p-[5px] hover:bg-slate-300"><img src="/img/icons/facebook-svgrepo-com.svg" alt="instagram"></a> 
-      <a href="http://github.com/Ferdinand05" class="lg:w-[44px] inline-block w-10 border border-slate-400 rounded-full p-[5px] hover:bg-slate-300"><img src="/img/icons/github-142-svgrepo-com.svg" alt="instagram"></a> 
-    </div>
-  </div>
-</footer>
-<footer class="footer px-10 py-4 border-t text-base-content bg-base-300 border-slate-300">
-  <div class="items-center grid-flow-col w-full text-center">
-    <p class="w-full text-sm">&copy; 2023. All Rights Reserved<br/>Ferdinandk</p>
-  </div> 
-  </div>
-</footer>
+          <div class="px-8 mt-5 md:w-1/2 text-center lg:text-left" data-aos="fade-up">
+            <div class="location text-xl lg:text-2xl mb-5">
+              <i class="fa-solid fa-location-dot text-xl md:text-3xl"></i>
+              Tangerang, Indonesia
+            </div>
+            <div class="email text-xl lg:text-2xl">
+              <i class="fa-solid fa-at md:text-3xl"></i>
+              fkoryanto@gmail.com
+            </div>
+            <div class="social-media text-4xl md:text-5xl mt-10">
+              <div class="flex gap-2 lg:gap-7 text-center justify-center lg:justify-start">
+                <a href="" class="border-slate-300 dark:border-slate-500 border md:border-2 rounded-full hover:bg-slate-300"><i class="p-3 fa-brands fa-github " style="color: #444141"></i></a>
+                <a href="" class="border-slate-300 dark:border-slate-500 border md:border-2 rounded-full hover:bg-slate-300"><i class="p-3 fa-brands fa-instagram" style="color: #4c68d7"></i></a>
+                <a href="" class="border-slate-300 dark:border-slate-500 border md:border-2 rounded-full hover:bg-slate-300"><i class="p-3 fa-brands fa-facebook" style="color: #4561ed"></i></a>
+                <a href="" class="border-slate-300 dark:border-slate-500 border md:border-2 rounded-full hover:bg-slate-300"><i class="p-3 fa-brands fa-linkedin" style="color: #0077b5 "></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END -->
 
+    <footer class="footer p-10 bg-base-300 text-base-content w-full dark:bg-darkmode dark:text-textdark">
+      <div>
+        <span class="footer-title lg:text-3xl dark:text-blue-600 dark:opacity-100">Services</span>
+        <p class="lg:text-xl">Portfolio</p>
+        <p class="lg:text-xl">Design</p>
+        <p class="lg:text-xl">Web Developer</p>
+        <p class="lg:text-xl">Branding</p>
+      </div>
+      <div>
+        <span class="footer-title lg:text-3xl dark:text-blue-600 dark:opacity-100">Navigasi</span>
+        <a class="link link-hover lg:text-xl" href="#home">Home</a>
+        <a class="link link-hover lg:text-xl" href="#about">About</a>
+        <a class="link link-hover lg:text-xl" href="#skill">Skill</a>
+        <a class="link link-hover lg:text-xl" href="#portfolio">Portfolio</a>
+        <a class="link link-hover lg:text-xl" href="#contact">Contact</a>
+      </div>
+      <div>
+        <span class="footer-title lg:text-3xl dark:text-blue-600 dark:opacity-100">Social</span>
+        <div class="grid grid-cols-3 gap-3">
+          <a href="http://instagram.com/_ferdinandk" class="lg:w-[44px] inline-block w-10 border border-slate-400 rounded-full p-[5px] hover:bg-slate-300"><img src="/img/icons/instagram-svgrepo-com.svg" alt="instagram" /></a>
+          <a href="http://" class="lg:w-[44px] inline-block w-10 border border-slate-400 rounded-full p-[5px] hover:bg-slate-300"><img src="/img/icons/facebook-svgrepo-com.svg" alt="instagram" /></a>
+          <a href="http://github.com/Ferdinand05" class="lg:w-[44px] inline-block w-10 border border-slate-400 rounded-full p-[5px] hover:bg-slate-300"><img src="/img/icons/github-142-svgrepo-com.svg" alt="instagram" /></a>
+        </div>
+      </div>
+    </footer>
+    <footer class="footer px-10 py-4 border-t text-base-content bg-base-300 border-slate-300 dark:bg-darkmode">
+      <div class="items-center grid-flow-col w-full text-center">
+        <p class="w-full text-sm">&copy; 2023. All Rights Reserved<br />Ferdinandk</p>
+      </div>
+    </footer>
 
+    <button class="btn btn-info btn-circle fixed right-10 bottom-14 hidden" id="btnScroll" onclick="topFunction()">
+      <i class="fa-solid fa-arrow-up text-xl"></i>
+    </button>
 
+    <script src="./js/script.js"></script>
+    <script src="./assets/js/all.min.js"></script>
+    <script src="./node_modules/aos/dist/aos.js"></script>
+    <script>
+      AOS.init();
 
+      // scroll back to top
+      // Get the button
+      let mybutton = document.getElementById("btnScroll");
 
-  <script src="./js/script.js"></script>
-  <script src="./js/typewriter.js"></script>
-  <script src="./node_modules/aos/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+
+      $(document).ready(function () {
+
+        $("#dark-mode").click(function (e) {
+          $("html").toggleClass("dark");
+        });
+
+      });
+    </script>
   </body>
 </html>
