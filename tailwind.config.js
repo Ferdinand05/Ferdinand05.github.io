@@ -9,7 +9,7 @@ module.exports = {
       },
       colors: {
         darkmode: "#121212",
-        textdark: "#eeeeee",
+        textdark: "#c9c9c9",
       },
     },
   },

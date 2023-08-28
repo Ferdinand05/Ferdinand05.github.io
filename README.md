@@ -1,4 +1,14 @@
 # porto-ferdi
+
 portfolio Ferdinand menggunakan tailwindcss
 
-## Dibuat menggunakan HTML & TailwindCSS , AOS & Animate.css
+## Dibuat menggunakan :
+
+- HTML
+- TailwindCSS & DaisyUI
+- Animasi AOS
+- Animate.css
+- Fontawsome
+- Jquery
+
+---
